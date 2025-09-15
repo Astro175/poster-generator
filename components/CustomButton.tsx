@@ -78,22 +78,10 @@ export default function CustomButton({
         ]}
         {...rest}
       >
-        <Text
-          style={[
-            {
-              fontSize: 16,
-              fontWeight: "600",
-              color: "#111827",
-            },
-            labelStyle,
-          ]}
-        >
-          Generate
-        </Text>
         <View
           pointerEvents="none"
           style={{
-            marginLeft: 12,
+            marginRight: 12,
             width: 34,
             height: 34,
             borderRadius: 34,
@@ -147,6 +135,18 @@ export default function CustomButton({
             }}
           />
         </View>
+        <Text
+          style={[
+            {
+              fontSize: 16,
+              fontWeight: "600",
+              color: "#111827",
+            },
+            labelStyle,
+          ]}
+        >
+          Generate
+        </Text>
       </Pressable>
     </Animated.View>
   );
