@@ -8,7 +8,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import CustomButton from "./CustomButton";
 import PostTypeList from "./PostTypeList";
+import SettingsSection from "./SettingsSection";
 
 const SmartScriptContent = () => {
   const [text, setText] = useState<string>("");
@@ -40,9 +42,8 @@ const SmartScriptContent = () => {
           <Ionicons name="image-outline" size={20} color="#fff" />
         </TouchableOpacity>
       </View>
-      <View>
-        <Text >Settings</Text>
-      </View>
+      <SettingsSection />
+      <CustomButton />
     </View>
   );
 };
